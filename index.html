@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="productos.js"></script>
+  <title>G-Burguer Wish</title>
+</head>
+
+<body>
+<!-- Barra de Navegacion -->
+  <nav class="navbar bg-primary sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <div class="nav-logo">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logoburg.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+        </a>
+      </div>
+
+      <a class="navbar-brand " href="index.html">
+        <i class="bi bi-cart4 " style="color: white;"></i>
+      </a>
+      <a class="navbar-brand" href="pedidos.html">
+        <i class="bi bi-pencil-square"></i>
+      </a>
+      <a class="navbar-brand" href="cocina.html">
+        <i class="bi bi-fire"></i>
+      </a>
+      <a class="navbar-brand" href="user.html">
+        <i class="bi bi-person-circle"></i>
+      </a>
+    </div>
+  </nav>
+<!-- END NAVBAR  -->
+
+  <form id="form1" class="form" name="form1">
+    <div class="form1">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text bg-secondary" id="inputGroup-sizing-sm">Mesa #</span>
+        <input type="number" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm">
+      </div>
+    </div>
+    <!--Selecion de categoria y tipo de producto  -->
+    <div class="form1">
+      <select id="categoria" onchange="cambia_cat()" class="bg-secondary form-select select-cat"
+        aria-label="Default select example">
+        <option selected>Categoria</option>
+        <option value="hamburguesas">Hamburguesas</option>
+        <option value="perros">Perros</option>
+        <option value="pizzas">Pizzas</option>
+        <option value="especiales">Especiales</option>
+        <option value="refrescos">Refrescos</option>
+      </select>
+
+      <select id="tipos" class="form-select select-cat bg-secondary" aria-label="Default select example">
+        <option selected>Tipo de Producto</option>
+      </select>
+    </div>
+
+
+    <!-- IMAGEN -->
+    <div class="img-products">
+      <img src="img/products/pizzas/pguerrera.png" class="products " alt="...">
+    </div>
+    <!-- Detalles Producto -->
+    <div class="container">
+      <div class="align-content-center w-5000">
+        <div class="input-group">
+          <span class="input-group-text bg-primary border-3 ">Descripción</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </div>    
+    </div>
+    <!-- Unidades -->
+    <div class="form1">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text bg-secondary" id="inputGroup-sizing-sm">Cantidad</span>
+        <input type="number" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm">
+      </div>
+    </div>
+    <!-- Añadir a Carrito -->
+    <div class="d-grid gap-2 col-5 mx-auto">
+      <button class="btn btn-primary" type="button"><i class="bi bi-cart-plus"></i></button>
+    </div>
+    <!-- Finalizar compra -->
+    <div class="d-grid gap-2 col-10 mx-auto justify-content-end">
+      <button class="btn btn-success me-md-2" type="button"><i class="bi bi-check2"></i></button>
+    </div>
+  </form>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
