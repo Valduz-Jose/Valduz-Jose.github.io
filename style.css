@@ -22,12 +22,32 @@ iframe {
   color: #f40009;
 }
 
-nav div a i {
+div a i {
   margin-top: 10px;
   font-size: 2rem;
   color: #ffbe90;
 }
-nav div a i:hover {
+div a i:hover {
+  margin-top: 10px;
+  color: white;
+}
+
+.icon-botton {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #ffbe90;
+}
+.icon-botton:hover {
+  margin-top: 10px;
+  color: white;
+}
+
+.icon-botton-check {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+.icon-botton-check:hover {
   margin-top: 10px;
   color: white;
 }
@@ -86,22 +106,15 @@ nav div a i:hover {
 }
 
 .card2 {
-  text-align: center;
-  margin: center;
+  margin: auto;
   height: 50px;
-  flex: 1;
   transition: 0.3s all ease;
   border-radius: 32px;
 }
 
 .card2:hover {
-  flex: 1.5;
+  flex: 0.15;
   background-color: #f25918;
-}
-
-.selec-cook {
-  height: 40px;
-  width: 40px;
 }
 
 .heading {

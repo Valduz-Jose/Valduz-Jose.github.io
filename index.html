@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="productos.js"></script>
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!-- Barra de Navegacion -->
+  <!-- Barra de Navegacion -->
   <nav class="navbar bg-primary sticky-top" data-bs-theme="dark">
     <div class="container">
       <div class="nav-logo">
@@ -24,32 +24,32 @@
       </div>
 
       <a class="navbar-brand " href="index.html">
-        <i class="bi bi-cart4 " style="color: white;"></i>
+        <i class="fa-regular fa-pen-to-square"></i>
       </a>
       <a class="navbar-brand" href="pedidos.html">
-        <i class="bi bi-pencil-square"></i>
+        <i class="fa-regular fa-rectangle-list"></i>
       </a>
       <a class="navbar-brand" href="cocina.html">
-        <i class="bi bi-fire"></i>
+        <i class="fa-solid fa-fire-burner"></i>
       </a>
       <a class="navbar-brand" href="user.html">
-        <i class="bi bi-person-circle"></i>
+        <i class="fa-regular fa-user"></i>
       </a>
     </div>
   </nav>
-<!-- END NAVBAR  -->
+  <!-- END NAVBAR  -->
 
   <form id="form1" class="form" name="form1">
     <div class="form1">
       <div class="input-group input-group-sm mb-3">
-        <span class="input-group-text bg-secondary" id="inputGroup-sizing-sm">Mesa #</span>
+        <span class="input-group-text bg-info" id="inputGroup-sizing-sm">Mesa #</span>
         <input type="number" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
     </div>
     <!--Selecion de categoria y tipo de producto  -->
     <div class="form1">
-      <select id="categoria" onchange="cambia_cat()" class="bg-secondary form-select select-cat"
+      <select id="categoria" onchange="cambia_cat()" class="bg-info form-select select-cat"
         aria-label="Default select example">
         <option selected>Categoria</option>
         <option value="hamburguesas">Hamburguesas</option>
@@ -59,7 +59,7 @@
         <option value="refrescos">Refrescos</option>
       </select>
 
-      <select id="tipos" class="form-select select-cat bg-secondary" aria-label="Default select example">
+      <select id="tipos" class="form-select select-cat bg-info" aria-label="Default select example">
         <option selected>Tipo de Producto</option>
       </select>
     </div>
@@ -73,26 +73,27 @@
     <div class="container">
       <div class="align-content-center w-5000">
         <div class="input-group">
-          <span class="input-group-text bg-primary border-3 ">Descripción</span>
+          <span class="input-group-text bg-info border-3 ">Descripción</span>
           <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
-      </div>    
+      </div>
     </div>
     <!-- Unidades -->
     <div class="form1">
       <div class="input-group input-group-sm mb-3">
-        <span class="input-group-text bg-secondary" id="inputGroup-sizing-sm">Cantidad</span>
+        <span class="input-group-text bg-info" id="inputGroup-sizing-sm">Cantidad</span>
         <input type="number" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
     </div>
     <!-- Añadir a Carrito -->
     <div class="d-grid gap-2 col-5 mx-auto">
-      <button class="btn btn-primary" type="button"><i class="bi bi-cart-plus"></i></button>
+      <button class="btn btn-primary " type="button"><i class="icon-botton fa-solid fa-cart-plus "></i></button>
     </div>
     <!-- Finalizar compra -->
     <div class="d-grid gap-2 col-10 mx-auto justify-content-end">
-      <button class="btn btn-success me-md-2" type="button"><i class="bi bi-check2"></i></button>
+      <button class="btn btn-success  me-md-2" type="button"><i
+          class="icon-botton-check fa-solid fa-check "></i></button>
     </div>
   </form>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
