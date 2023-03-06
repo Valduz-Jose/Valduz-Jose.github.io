@@ -65,16 +65,15 @@
       </select>
     </div>
 
-
     <!-- IMAGEN -->
     <div class="img-products">
       <img src="img/products/pizzas/pguerrera.png" class="products " alt="...">
     </div>
     <!-- Detalles Producto -->
-    <div class="container">
-      <div class="align-content-center w-5000">
+    <div class="form1">
+      <div class="align-content-center ">
         <div class="input-group">
-          <span class="input-group-text bg-info border-3 ">Descripción</span>
+          <span class="input-group-text bg-info border-3 ">Detalle</span>
           <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
       </div>
@@ -95,6 +94,62 @@
     <div class="d-grid gap-2 col-10 mx-auto justify-content-end">
       <button class="btn btn-success  me-md-2" type="button"><i
           class="icon-botton-check fa-solid fa-check "></i></button>
+    </div>
+
+    <!-- Boton Carrito -->
+    <div class="icon-botton2" id="open" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="icon-2 fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Pedido Actual</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                2 Hamburguesas de Combo <br>
+                Con Todo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                1 Pizza Hawaiana Grande<br>
+                Sin Jamon
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                1 Refresco 2L<br>
+                Coca-Cola
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                4 Perros Normales<br>
+                2 Sin Cebolla, 1 Sin Mostaza
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
     </div>
   </form>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

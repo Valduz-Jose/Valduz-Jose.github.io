@@ -35,19 +35,22 @@ body {
 
 .nav-home {
     color: $warning;
+    
 }
 
-div {
-    & a {
-        & i {
-            margin-top: 10px;
-            font-size: 2rem;
-            color: $dark;
-        }
-
-        & i:hover {
-            margin-top: 10px;
-            color: white;
+nav {
+    & div{
+        & a {
+            & i {
+                margin-top: 10px;
+                font-size: 2rem;
+                color: $dark;
+            }
+    
+            & i:hover {
+                margin-top: 10px;
+                color: white;
+            }
         }
     }
 }
@@ -61,6 +64,32 @@ div {
         margin-top: 10px;
         color: white;
     }
+}
+
+.icon-botton2 {
+    display:flex;
+    margin-top: -620px;
+    margin-left: 85vw;
+    font-size: 2rem;
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+}
+.icon-2 {
+    color: $success;
+    animation-name: carrito-animado;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes carrito-animado{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+    
 }
 
 .icon-botton-check {
@@ -134,11 +163,14 @@ div {
     height: 50px;
     transition: .3s all ease;
     border-radius: 32px;
+    font-size: 2rem;
+    color: $dark;
 }
 
 .card2:hover {
     flex: 0.15;
     background-color: $primary;
+    color: white;
 }
 
 // .selec-cook {
@@ -240,6 +272,37 @@ html.dark-mode {
     margin-top: 10%;
 
 }
+// POP_UP
+
+// .modal-container{
+//     display:flex;
+//     background-color: $success;
+//     align-items:center;
+//     position:fixed;
+//     pointer-events: none;
+//     opacity: 0;
+// }
+// .show{
+//     pointer-events: auto;
+//     opacity: 1;
+// }
+// .moda{
+//     background-color: white;
+//     width: 600px;
+//     max-width: 100%;
+//     padding: 30px 50px;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 4px rgba(0 ,0 ,0,0.2)
+//     & h1{
+//         margin: 0;
+//     }
+//     & p{
+//         opacity: 0.7;
+//         font-size: 14px;
+//     }
+// }
+
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
