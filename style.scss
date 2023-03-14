@@ -186,10 +186,6 @@ nav {
     color: white;
 }
 
-// .selec-cook {
-//     height: 40px;
-//     width: 40px;
-// }
 
 .heading {
     position: relative;
@@ -282,36 +278,6 @@ html.dark-mode {
     background-color: #f40009;
     color: #f40009;
 }
-// POP_UP
-
-// .modal-container{
-//     display:flex;
-//     background-color: $success;
-//     align-items:center;
-//     position:fixed;
-//     pointer-events: none;
-//     opacity: 0;
-// }
-// .show{
-//     pointer-events: auto;
-//     opacity: 1;
-// }
-// .moda{
-//     background-color: white;
-//     width: 600px;
-//     max-width: 100%;
-//     padding: 30px 50px;
-//     border-radius: 5px;
-//     box-shadow: 0 2px 4px rgba(0 ,0 ,0,0.2)
-//     & h1{
-//         margin: 0;
-//     }
-//     & p{
-//         opacity: 0.7;
-//         font-size: 14px;
-//     }
-// }
-
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
