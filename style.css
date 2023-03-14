@@ -136,7 +136,7 @@ nav div a i:hover {
 }
 
 .card {
-  width: 90%;
+  width: 20em;
   -webkit-margin-after: 15px;
           margin-block-end: 15px;
   font-size: 1.1rem;
