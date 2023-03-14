@@ -21,7 +21,7 @@
   <nav class="navbar bg-primary sticky-top" data-bs-theme="dark">
     <div class="container">
       <div class="nav-logo">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://instagram.com/gordon_burguers?igshid=YmMyMTA2M2Y=">
           <img src="/img/logoburg.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
         </a>
       </div>
@@ -38,21 +38,24 @@
       <a class="navbar-brand" href="user.html">
         <i class="fa-regular fa-user"></i>
       </a>
+      <a class="navbar-brand" href="estadisticas.html">
+        <i class="fa-solid fa-chart-line"></i>
+      </a>
     </div>
   </nav>
   <!-- END NAVBAR  -->
 
   <form id="form1" class="form" name="form1">
     <div class="form1">
-      <div class="input-group input-group-sm mb-3">
-        <span class="input-group-text bg-info" id="inputGroup-sizing-sm">Mesa #</span>
-        <input type="number" class="form-control" aria-label="Sizing example input"
+      <div class="input-group input-group-sm mb-3 ">
+        <span class="input-group-text bg-info border-0" id="inputGroup-sizing-sm" for="mesas">Mesa #</span>
+        <input type="number" class="form-control" aria-label="Sizing example input " id="mesas"
           aria-describedby="inputGroup-sizing-sm">
       </div>
     </div>
     <!--Selecion de categoria y tipo de producto  -->
     <div class="form1">
-      <select id="categoria" onchange="cambia_cat()" class="bg-info form-select select-cat"
+      <select id="categoria" onchange="cambia_cat()" class="bg-info form-select select-cat border-0"
         aria-label="Default select example">
         <option selected>Categoria</option>
         <option value="hamburguesas">Hamburguesas</option>
@@ -62,7 +65,7 @@
         <option value="refrescos">Refrescos</option>
       </select>
 
-      <select id="tipos" class="form-select select-cat bg-info" aria-label="Default select example">
+      <select id="tipos" class="form-select select-cat bg-info border-0" aria-label="Default select example">
         <option selected>Tipo de Producto</option>
       </select>
     </div>
@@ -71,31 +74,36 @@
     <div class="img-products">
       <img src="img/products/pizzas/pguerrera.png" class="products " alt="...">
     </div>
-    <!-- Detalles Producto -->
-    <div class="form1">
-      <div class="align-content-center ">
-        <div class="input-group">
-          <span class="input-group-text bg-info border-3 ">Detalle</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-      </div>
-    </div>
+    
     <!-- Unidades -->
     <div class="form1">
       <div class="input-group input-group-sm mb-3">
-        <span class="input-group-text bg-info" id="inputGroup-sizing-sm">Cantidad</span>
+        <span class="input-group-text bg-info border-0" id="inputGroup-sizing-sm">Cantidad</span>
         <input type="number" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
     </div>
+    <!-- Detalles Producto -->
+    <div class="form2">
+      <div class="align-content-center ">
+        <div class="input-group">
+          <span class="input-group-text bg-info border-0 " >Descripción</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+    </div>
+    
     <!-- Añadir a Carrito -->
-    <div class="d-grid gap-2 col-5 mx-auto">
-      <button class="btn btn-primary " type="button"><i class="icon-botton fa-solid fa-cart-plus "></i></button>
+    <div class="text-center">
+          <button class="btn btn-success " type="button">
+            <i class="icon-botton-check fa-regular fa-floppy-disk"></i>
+          </button>
     </div>
     <!-- Finalizar compra -->
-    <div class="d-grid gap-2 col-10 mx-auto justify-content-end">
-      <button class="btn btn-success  me-md-2" type="button">
-        <i class="icon-botton-check fa-solid fa-check "></i></button>
+    <div class="text-end">
+        <button class="btn btn-danger " type="button">
+          <i class="icon-botton-check fa-solid fa-check-double"></i>
+          </button>
     </div>
 
     <!-- Boton Carrito -->
@@ -117,6 +125,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <p>Si desea eliminar uno o mas items del pedido deschekeelos y clic en guardar</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
               <label class="form-check-label" for="flexCheckChecked">
@@ -146,14 +155,22 @@
               </label>
             </div>
           </div>
+          <label for="Información-Extra">Información Extra</label>
+          <div class="input-group mb-3">
+            <div class="input-group-text">
+              <input class="form-check-input mt-0"  type="checkbox" value="Información Extra" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" id="Información-Extra" aria-label="Text input with checkbox">
+          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-success">Guardar Cambios</button>
+            <button type="button" class="btn btn-success text-white" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-warning text-white" data-bs-dismiss="modal">Eliminar Comanda</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Guardar</button>
           </div>
         </div>
       </div>
     </div>
-  </form>
+
   
 </body>
 
