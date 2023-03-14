@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.1rem;
 }
 
 iframe {
@@ -16,6 +15,7 @@ body {
 }
 
 .form1 {
+  font-size: 1.1rem;
   color: #f25918;
   width: 50%;
   margin: auto;
@@ -54,8 +54,8 @@ nav div a i:hover {
 
 .icono-estadistico {
   margin-top: 10px;
-  font-size: 2rem;
   color: #ffbe90;
+  font-size: 3rem;
 }
 
 .icon-botton {
@@ -139,6 +139,7 @@ nav div a i:hover {
   width: 90%;
   -webkit-margin-after: 15px;
           margin-block-end: 15px;
+  font-size: 1.1rem;
 }
 .card .card-header {
   color: black;

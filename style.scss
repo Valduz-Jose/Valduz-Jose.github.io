@@ -9,7 +9,7 @@ $success: #0f9191;
 
 *{
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.1rem;
+    
 }
 iframe {
     width: 100%;
@@ -23,6 +23,7 @@ body {
 }
 
 .form1 {
+    font-size: 1.1rem;
     color: $primary;
     width: 50%;
     margin: auto;
@@ -66,8 +67,8 @@ nav {
 }
 .icono-estadistico{
     margin-top: 10px;
-    font-size: 2rem;
     color: $dark;
+    font-size: 3rem;
 }
 
 .icon-botton {
@@ -146,6 +147,7 @@ nav {
 .card {
     width: 90%;
     margin-block-end: 15px;
+    font-size: 1.1rem;
 
     & .card-header {
         color: black;
