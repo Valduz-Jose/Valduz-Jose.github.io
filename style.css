@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.1rem;
 }
 
 iframe {
@@ -135,6 +136,7 @@ nav div a i:hover {
 }
 
 .card {
+  width: 90%;
   -webkit-margin-after: 15px;
           margin-block-end: 15px;
 }
